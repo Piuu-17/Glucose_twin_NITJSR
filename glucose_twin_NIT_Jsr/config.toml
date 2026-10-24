@@ -1,0 +1,26 @@
+# Glucose Twin theme: purple / white / blue
+# (baseRadius, borderColor, showWidgetBorder and [theme.sidebar] need Streamlit >= 1.46;
+#  older versions ignore them and fall back to the core colours.)
+
+[theme]
+base = "light"
+primaryColor = "#6D28D9"            # violet: sliders, focus rings, active widgets
+backgroundColor = "#F7F5FF"         # soft lavender-white canvas
+secondaryBackgroundColor = "#EDE9FE" # pale violet surfaces (inputs, tables)
+textColor = "#1E1B4B"               # deep indigo ink
+linkColor = "#2563EB"               # blue links
+font = "sans serif"
+baseRadius = "1rem"
+borderColor = "#DDD6FE"
+showWidgetBorder = true
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F0FF"
+borderColor = "#E4DEFF"
+
+[client]
+toolbarMode = "minimal"             # hides the Deploy button for a cleaner app
+
+[browser]
+gatherUsageStats = false

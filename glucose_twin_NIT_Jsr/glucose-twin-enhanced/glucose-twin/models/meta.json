@@ -1,0 +1,79 @@
+{
+  "features": [
+    "insulin",
+    "g_last",
+    "diff_15m",
+    "diff_30m",
+    "diff_60m",
+    "mean_4",
+    "std_4",
+    "max_4",
+    "min_4",
+    "mean_8",
+    "std_8",
+    "max_8",
+    "min_8",
+    "mean_16",
+    "std_16",
+    "max_16",
+    "min_16",
+    "meals_2h",
+    "since_meal_h",
+    "insulin_2h",
+    "hour_sin",
+    "hour_cos",
+    "p_Sex_Female",
+    "p_Sex_Male",
+    "p_Age_years",
+    "p_BMI_kg_m2",
+    "p_Duration_of_Diabetes_years",
+    "p_HbA1c_mmol_mol"
+  ],
+  "threshold": 0.38621049375371086,
+  "metrics": {
+    "Baseline (current glucose only)": {
+      "PR-AUC": 0.8255715983252752,
+      "ROC-AUC": 0.838842789863198,
+      "Precision": 0.5323565323565324,
+      "Recall": 0.8490749756572541,
+      "F1": 0.6544090056285178
+    },
+    "Twin model": {
+      "PR-AUC": 0.9884399147647359,
+      "ROC-AUC": 0.9919394994052704,
+      "Precision": 0.9338446788111218,
+      "Recall": 0.9483933787731256,
+      "F1": 0.9410628019323671
+    }
+  },
+  "backend": "LightGBM",
+  "kind": "T2DM",
+  "importance": {
+    "g_last": 0.38839203325455063,
+    "hour_cos": 0.17086549091259945,
+    "p_HbA1c_mmol_mol": 0.12995353117817085,
+    "insulin_2h": 0.060275839385234904,
+    "hour_sin": 0.039464527294088426,
+    "max_4": 0.039223334858824,
+    "min_16": 0.02840479505468545,
+    "min_4": 0.024469673361114434,
+    "mean_4": 0.0194538734325549,
+    "max_16": 0.013653647748478895,
+    "diff_15m": 0.01219133172308724,
+    "p_BMI_kg_m2": 0.011102029555181258,
+    "std_16": 0.010506151872626338,
+    "diff_30m": 0.009683034099563283,
+    "diff_60m": 0.009432905122286794
+  },
+  "test_patients": [
+    "2008",
+    "2009",
+    "2015",
+    "2017",
+    "2023",
+    "2027"
+  ],
+  "n_patients": 30,
+  "n_rows": 13710,
+  "spike_rate": 0.49671772428884026
+}
