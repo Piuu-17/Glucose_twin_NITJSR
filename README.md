@@ -85,8 +85,26 @@ Most existing tools also act as black boxes: they give a number without explaini
 
 ## 🏗️ Architecture
 
-📄 **Architecture diagram (PDF):** [Glucose_Twin_Architecture_Diagram.pdf](docs/Glucose_Twin_Architecture_Diagram.pdf)
+📄 **Architecture diagram (PDF):** included in the repo, see [Glucose_Twin_Architecture_Diagram.pdf](Glucose_Twin_Architecture_Diagram.pdf)
 
+Simplified view of the same pipeline:
+
+```mermaid
+flowchart LR
+    A[Shanghai T2DM dataset<br/>CGM + meals + insulin + patient summary] --> B[pipeline.py<br/>cleaning, gap handling, feature engineering, 2h labels]
+    B --> C[train.py<br/>patient-level split + LightGBM training]
+    C --> D[(models/<br/>model.joblib, meta.json, featured.joblib)]
+    D --> E[app.py - Streamlit dashboard]
+    E --> F[Risk gauge and 2h outlook]
+    E --> G[Explanations: what drives the risk]
+    E --> H[What-if simulator]
+```
+
+---
+
+## 📑 Presentation
+
+📄 **PPT (PDF format):** included in the repo, see [Glucose_Twin_Final.pdf](Glucose_Twin_Final.pdf)
 Simplified view of the same pipeline:
 
 ```mermaid
