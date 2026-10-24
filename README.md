@@ -81,10 +81,13 @@ Most existing tools also act as black boxes: they give a number without explaini
 - **Evaluation:** patients in train, validation and test sets never overlap. Metrics: PR-AUC, ROC-AUC, precision, recall, F1. A baseline using only current glucose is reported alongside the model.
 - **Explainability:** per-prediction feature contributions from the LightGBM booster, plus global feature importance.
 
+---
 
 ## 🏗️ Architecture
 
-📄 **Architecture diagram (PDF):** [Architecture_Diagram.pdf](<"C:\Users\piu chatterjee\Downloads\Glucose_Twin_Architecture_Diagram.pdf">)
+📄 **Architecture diagram (PDF):** [Glucose_Twin_Architecture_Diagram.pdf](docs/Glucose_Twin_Architecture_Diagram.pdf)
+
+Simplified view of the same pipeline:
 
 ```mermaid
 flowchart LR
@@ -99,15 +102,15 @@ flowchart LR
 
 ---
 
-## 🎥 Demo Video (15–20 min)
+## 🎥 Demo Video
 
-▶️ **Watch here:** [Project walkthrough video](<PUBLIC_VIDEO_LINK>)
+▶️ **Watch the 15–20 minute walkthrough on YouTube:** [https://youtu.be/nNBSjTgRb2I](https://youtu.be/nNBSjTgRb2I)
 
 ---
 
 ## 📑 Presentation
 
-📄 **PPT (PDF format):** [Glucose_Twin_Presentation.pdf](<"C:\Users\piu chatterjee\Downloads\Glucose_Twin_Final.pdf">)
+📄 **PPT (PDF format):** [Glucose_Twin_Final.pdf](docs/Glucose_Twin_Final.pdf)
 
 ---
 
@@ -122,6 +125,9 @@ Glucose_twin_NITJSR/
 ├── requirements.txt
 ├── .streamlit/
 │   └── config.toml        # purple / white / blue theme
+├── docs/
+│   ├── Glucose_Twin_Final.pdf                  # presentation (PDF)
+│   └── Glucose_Twin_Architecture_Diagram.pdf   # architecture diagram (PDF)
 ├── LICENSE
 └── README.md
 ```
@@ -165,7 +171,7 @@ streamlit run app.py
 
 ## 📊 Dataset
 
-Shanghai T2DM CGM dataset: continuous glucose readings, meal and insulin records, and a patient summary file. Please download it from its original public source and follow its terms of use. Dataset link: `<ADD_DATASET_SOURCE_LINK>`.
+Shanghai T2DM CGM dataset: continuous glucose readings, meal and insulin records, and a patient summary file. Please download it from its original public source and follow its terms of use.
 
 ---
 
